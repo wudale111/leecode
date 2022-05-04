@@ -70,3 +70,6 @@
 
 #print(list)
 #print(sorted(list))
+
+str = "123"
+str.isnumeric()

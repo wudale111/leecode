@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef4e8f5e-2b83-437b-948c-9fa2126826d4" name="Default Changelist" comment="" />
+    <list default="true" id="ef4e8f5e-2b83-437b-948c-9fa2126826d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deleteminstr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checkpasswd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkpasswd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="28BJkfXsVZcR58tNRN3RrI8ZHLo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -31,8 +42,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="maopaosort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.checkpasswd">
+    <configuration name="checkpasswd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -45,7 +56,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/maopaosort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/checkpasswd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.checkpasswd" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.zuichangzichuang" />
         <item itemvalue="Python.stringsorted" />
         <item itemvalue="Python.sentencereverse" />
-        <item itemvalue="Python.maopaosort" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +190,7 @@
       <workItem from="1650982528829" duration="10334000" />
       <workItem from="1651320202881" duration="8155000" />
       <workItem from="1651365733579" duration="32565000" />
-      <workItem from="1651647536896" duration="9094000" />
+      <workItem from="1651647536896" duration="11588000" />
     </task>
     <servers />
   </component>
@@ -191,22 +202,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1650984494519" />
-    <state width="1478" height="165" key="GridCell.Tab.0.bottom" timestamp="1651673487967">
+    <state x="800" y="198" key="FileChooserDialogImpl" timestamp="1651675568463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="165" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651673487967" />
-    <state width="1478" height="165" key="GridCell.Tab.0.center" timestamp="1651673487967">
+    <state x="800" y="198" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1651675568463" />
+    <state width="1493" height="165" key="GridCell.Tab.0.bottom" timestamp="1651675611284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="165" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1651673487967" />
-    <state width="1478" height="165" key="GridCell.Tab.0.left" timestamp="1651673487967">
+    <state width="1493" height="165" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651675611284" />
+    <state width="1493" height="165" key="GridCell.Tab.0.center" timestamp="1651675611284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="165" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1651673487967" />
-    <state width="1478" height="165" key="GridCell.Tab.0.right" timestamp="1651673487967">
+    <state width="1493" height="165" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1651675611284" />
+    <state width="1493" height="165" key="GridCell.Tab.0.left" timestamp="1651675611284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="165" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1651673487967" />
+    <state width="1493" height="165" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1651675611284" />
+    <state width="1493" height="165" key="GridCell.Tab.0.right" timestamp="1651675611284">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="165" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1651675611284" />
     <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1651503562888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -233,6 +248,7 @@
     <SUITE FILE_PATH="coverage/leecode$test.coverage" NAME="test Coverage Results" MODIFIED="1651673487952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$zhiyinzi.coverage" NAME="zhiyinzi Coverage Results" MODIFIED="1650730012644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$lengthOfLongestSubstring.coverage" NAME="lengthOfLongestSubstring Coverage Results" MODIFIED="1650992830314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/leecode$checkpasswd.coverage" NAME="checkpasswd Coverage Results" MODIFIED="1651675611269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$sentencereverse.coverage" NAME="sentencereverse Coverage Results" MODIFIED="1651412614867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$jumpFloor_dp.coverage" NAME="jumpFloor_dp Coverage Results" MODIFIED="1650723852704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1651322539280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
