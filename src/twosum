@@ -1,0 +1,41 @@
+# class Solution:
+#     def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         hashtable = {}
+#         for index, num in enumerate(nums):
+#             print(index,num)
+#             if target - num in hashtable:
+#                 return [hashtable[target - num], index]
+#             #nums值做字典的健、 索引做字典值
+#             hashtable[nums[index]] = index
+#             print(hashtable)
+#         return []
+#
+#
+# A = Solution()
+# print(A.twoSum([3,7,4,5,1],6))
+
+#暴力枚举法
+# class Solution(object):
+#     def twoSum(self, nums, target):
+#         n=len(nums)
+#         for i in range(n):
+#             for j in range(i+1,n):
+#                 if nums[i]+nums[j]==target:
+#                     return i,j
+
+# from typing import List
+#
+# class Solution:
+#     def twoSum(self, nums:List[int], target: int) -> List[int]:
+#         numdict = {}
+#         for index, number in enumerate(nums):
+#             if target - number in numdict:
+#                 return [numdict[target - number],index]
+#             numdict[number] = index
+#         return []
+#
+# A = Solution()
+# print(A.twoSum([3,7,4,5,1],6))
+
+# dict = {1:2,2:1,1:2}
+# print(dict)
