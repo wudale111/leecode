@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef4e8f5e-2b83-437b-948c-9fa2126826d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/deleteminstr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checkpasswd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkpasswd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +38,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.checkpasswd">
+  <component name="RunManager" selected="Python.strencypt">
     <configuration name="checkpasswd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,7 +61,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sentencereverse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="strencypt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,7 +74,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/sentencereverse.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/strencypt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.strencypt" />
         <item itemvalue="Python.checkpasswd" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.zuichangzichuang" />
         <item itemvalue="Python.stringsorted" />
-        <item itemvalue="Python.sentencereverse" />
       </list>
     </recent_temporary>
   </component>
@@ -190,38 +186,55 @@
       <workItem from="1650982528829" duration="10334000" />
       <workItem from="1651320202881" duration="8155000" />
       <workItem from="1651365733579" duration="32565000" />
-      <workItem from="1651647536896" duration="11588000" />
+      <workItem from="1651647536896" duration="12740000" />
+      <workItem from="1651753896765" duration="5266000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1651677242137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651677242137</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="74" key="#Notifications" timestamp="1650984494519">
+    <state x="361" y="74" key="#Notifications" timestamp="1651677449667">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1650984494519" />
+    <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1651677449667" />
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1651677241125">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1651677241125" />
     <state x="800" y="198" key="FileChooserDialogImpl" timestamp="1651675568463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="800" y="198" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1651675568463" />
-    <state width="1493" height="165" key="GridCell.Tab.0.bottom" timestamp="1651675611284">
+    <state width="1478" height="157" key="GridCell.Tab.0.bottom" timestamp="1651757866510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="165" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651675611284" />
-    <state width="1493" height="165" key="GridCell.Tab.0.center" timestamp="1651675611284">
+    <state width="1478" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651757866510" />
+    <state width="1478" height="157" key="GridCell.Tab.0.center" timestamp="1651757866510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="165" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1651675611284" />
-    <state width="1493" height="165" key="GridCell.Tab.0.left" timestamp="1651675611284">
+    <state width="1478" height="157" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1651757866510" />
+    <state width="1478" height="157" key="GridCell.Tab.0.left" timestamp="1651757866510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="165" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1651675611284" />
-    <state width="1493" height="165" key="GridCell.Tab.0.right" timestamp="1651675611284">
+    <state width="1478" height="157" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1651757866510" />
+    <state width="1478" height="157" key="GridCell.Tab.0.right" timestamp="1651757866510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="165" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1651675611284" />
+    <state width="1478" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1651757866510" />
     <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1651503562888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -238,10 +251,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1478" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1651503562888" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1651647550640">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1651677766687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1651647550640" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1651677766687" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1651753914112">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1651753914112" />
+    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1651677257078">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1651677257078" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/leecode$twosum.coverage" NAME="twosum Coverage Results" MODIFIED="1650684993411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -250,6 +271,7 @@
     <SUITE FILE_PATH="coverage/leecode$lengthOfLongestSubstring.coverage" NAME="lengthOfLongestSubstring Coverage Results" MODIFIED="1650992830314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$checkpasswd.coverage" NAME="checkpasswd Coverage Results" MODIFIED="1651675611269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$sentencereverse.coverage" NAME="sentencereverse Coverage Results" MODIFIED="1651412614867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/leecode$strencypt.coverage" NAME="strencypt Coverage Results" MODIFIED="1651757866510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$jumpFloor_dp.coverage" NAME="jumpFloor_dp Coverage Results" MODIFIED="1650723852704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1651322539280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$intercept_str.coverage" NAME="intercept_str Coverage Results" MODIFIED="1650685566711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
