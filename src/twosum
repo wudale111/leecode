@@ -39,3 +39,40 @@
 
 # dict = {1:2,2:1,1:2}
 # print(dict)
+
+
+from typing import List
+class Solution:
+    # def twoSum(self,nums:List,target:int)->List:
+    #       n = len(nums)
+    #       for i in range(n):
+    #           #为什么用列表不行？
+    #           if target -nums[i] in nums:
+    #               return [i,]
+    # def twoSum(self, nums: List, target: int) -> List:
+    #     n = len(nums)
+    #     dic = {}
+    #     for index,value in enumerate(nums):
+    #         #会不会出现重复nums=[1,3,2,5 ],target =6,这是利用了什么原理把不会遇到重复？
+    #         #在一个数组中找两个数之和，遍历一个数组，把它的值存在另外一个
+    #         if target - value in dic:
+    #             return [index,dic[target-value]]
+    #         dic[target -value] = index
+    #     return []
+
+    def twoSum(self, nums: List, target: int) -> List:
+        n = len(nums)
+        dic = {}
+        for index,value in enumerate(nums):
+            #会不会出现重复nums=[1,3,2,5 ],target =6,这是利用了什么原理把不会遇到重复？
+            #在一个数组中找两个数之和，遍历一个数组，把它的值存在另外一个数组中。
+            if target - value in dic:
+                return [index,dic[target-value]]
+            dic[value] = index
+        return []
+A = Solution()
+nums = [1,2,3,5]
+target = 6
+A.twoSum(nums,target)
+print(A.twoSum(nums,target))
+
