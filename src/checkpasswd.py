@@ -89,6 +89,7 @@ def check(s):
 #         if len(s.split(s[i:i + 3])) >= 3:
 #             return 0
 #     return 1
+      #遍历长度为3的子字符串，利用集合进行去重，判断是否有重复的子串
       for i in range(len(s)-2):
           x.append(s[i:i+3])
       if len(set(x)) < len(x):
