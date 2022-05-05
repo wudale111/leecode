@@ -85,10 +85,16 @@ def check(s):
     if a + b + c + d < 3:
         return 0
     #遍历长度为3的子字符串，以这个子串进行切割，只有两段则没有相同长度为3的子串。
-    for i in range(len(s) - 3):
-        if len(s.split(s[i:i + 3])) >= 3:
-            return 0
-    return 1
+#     for i in range(len(s) - 3):
+#         if len(s.split(s[i:i + 3])) >= 3:
+#             return 0
+#     return 1
+      for i in range(len(s)-2):
+          x.append(s[i:i+3])
+      if len(set(x)) < len(x):
+          return 0
+      else:
+          return 1  
 
 
 while 1:
