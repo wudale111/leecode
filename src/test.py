@@ -70,6 +70,34 @@
 
 #print(list)
 #print(sorted(list))
+#
+# str = "123"
+# str.isnumeric()
 
-str = "123"
-str.isnumeric()
+
+#循环体中改变自增变量的值，不改变循环过程中，自增变量的值
+#0 3 1 3 2
+# for i in range(5):
+#     print(i)
+#     i = 3
+#     print(i)
+
+
+# 012 012 ,return之后，后面的for循环不会在继续。
+# def test():
+#     for i in range(5):
+#         if i == 2:
+#             return
+#         for j in range(3):
+#             print(j)
+#             #j = j+1
+# if __name__ == '__main__':
+#     test()
+
+list= []
+a,b,c,d =map(int,input().split())
+list.append(a)
+list.append(b)
+list.append(c)
+list.append(d)
+print(list)
