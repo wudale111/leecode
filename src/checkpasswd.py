@@ -69,38 +69,38 @@ while True:
     except:
         break
 
-def check(s):
-    if len(s) <= 8:
-        return 0
-    a, b, c, d = 0, 0, 0, 0
-    for item in s:
-        if ord('a') <= ord(item) <= ord('z'):
-            a = 1
-        elif ord('A') <= ord(item) <= ord('Z'):
-            b = 1
-        elif ord('0') <= ord(item) <= ord('9'):
-            c = 1
-        else:
-            d = 1
-    if a + b + c + d < 3:
-        return 0
+# def check(s):
+#     if len(s) <= 8:
+#         return 0
+#     a, b, c, d = 0, 0, 0, 0
+#     for item in s:
+#         if ord('a') <= ord(item) <= ord('z'):
+#             a = 1
+#         elif ord('A') <= ord(item) <= ord('Z'):
+#             b = 1
+#         elif ord('0') <= ord(item) <= ord('9'):
+#             c = 1
+#         else:
+#             d = 1
+#     if a + b + c + d < 3:
+#         return 0
     #遍历长度为3的子字符串，以这个子串进行切割，只有两段则没有相同长度为3的子串。
 #     for i in range(len(s) - 2):
 #         if len(s.split(s[i:i + 3])) >= 3:
 #             return 0
 #     return 1
       #遍历长度为3的子字符串，利用集合进行去重，判断是否有重复的子串
-      for i in range(len(s)-2):
-          x.append(s[i:i+3])
-      if len(set(x)) < len(x):
-          return 0
-      else:
-          return 1  
-
-
-while 1:
-    try:
-        print('OK' if check(input()) else 'NG')
-    except:
-        break
+#       for i in range(len(s)-2):
+#           x.append(s[i:i+3])
+#       if len(set(x)) < len(x):
+#           return 0
+#       else:
+#           return 1
+#
+#
+# while 1:
+#     try:
+#         print('OK' if check(input()) else 'NG')
+#     except:
+#         break
 

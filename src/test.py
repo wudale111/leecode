@@ -53,8 +53,9 @@
 #islower()方法只要有小写就为true
 # import re
 # str = "abcA1"
-# if str.isalpha() == True:
+# if str.islower() == True:
 #     print("true")
+
 
 
 # import re
@@ -94,10 +95,10 @@
 # if __name__ == '__main__':
 #     test()
 
-list= []
-a,b,c,d =map(int,input().split())
-list.append(a)
-list.append(b)
-list.append(c)
-list.append(d)
-print(list)
+# list= []
+# a,b,c,d =map(int,input().split())
+# list.append(a)
+# list.append(b)
+# list.append(c)
+# list.append(d)
+# print(list)
