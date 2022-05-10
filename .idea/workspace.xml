@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef4e8f5e-2b83-437b-948c-9fa2126826d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deleteminstr.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deleteminstr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.reversestr">
     <configuration name="24dianyouxi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,7 +61,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="huisu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="combinationSum3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +74,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/huisu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/combinationSum3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="strencypt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="reversestr" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +96,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/strencypt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/reversestr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.reversestr" />
+        <item itemvalue="Python.combinationSum3" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.subsets" />
         <item itemvalue="Python.24dianyouxi" />
-        <item itemvalue="Python.huisu" />
-        <item itemvalue="Python.strencypt" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +191,8 @@
       <workItem from="1651841091137" duration="7444000" />
       <workItem from="1652010241662" duration="8367000" />
       <workItem from="1652103983922" duration="2282000" />
-      <workItem from="1652109425142" duration="387000" />
+      <workItem from="1652109425142" duration="991000" />
+      <workItem from="1652190002818" duration="4416000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1651677242137</created>
@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652109286714</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="first commit">
+      <created>1652109820799</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652109820799</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,30 +251,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1651677449667" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1652109285243">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1652109819835">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1652109285243" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1652109819835" />
     <state x="800" y="198" key="FileChooserDialogImpl" timestamp="1651675568463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="800" y="198" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1651675568463" />
-    <state width="1493" height="157" key="GridCell.Tab.0.bottom" timestamp="1652022749437">
+    <state width="1493" height="157" key="GridCell.Tab.0.bottom" timestamp="1652196561650">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1652022749437" />
-    <state width="1493" height="157" key="GridCell.Tab.0.center" timestamp="1652022749437">
+    <state width="1493" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1652196561650" />
+    <state width="1493" height="157" key="GridCell.Tab.0.center" timestamp="1652196561650">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1652022749437" />
-    <state width="1493" height="157" key="GridCell.Tab.0.left" timestamp="1652022749437">
+    <state width="1493" height="157" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1652196561650" />
+    <state width="1493" height="157" key="GridCell.Tab.0.left" timestamp="1652196561649">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1652022749437" />
-    <state width="1493" height="157" key="GridCell.Tab.0.right" timestamp="1652022749437">
+    <state width="1493" height="157" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1652196561649" />
+    <state width="1493" height="157" key="GridCell.Tab.0.right" timestamp="1652196561650">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1652022749437" />
+    <state width="1493" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1652196561650" />
     <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1651503562888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -284,14 +291,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1478" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1651503562888" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1652109299837">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1652109831403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1652109299837" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1652109426614">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1652109831403" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1652190005666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1652109426614" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1652190005666" />
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1651677257078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -299,6 +306,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/leecode$twosum.coverage" NAME="twosum Coverage Results" MODIFIED="1650684993411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/leecode$combinationSum3.coverage" NAME="combinationSum3 Coverage Results" MODIFIED="1652190461132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$test.coverage" NAME="test Coverage Results" MODIFIED="1652021584707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$subsets.coverage" NAME="subsets Coverage Results" MODIFIED="1652020349086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$zhiyinzi.coverage" NAME="zhiyinzi Coverage Results" MODIFIED="1650730012644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -306,6 +314,7 @@
     <SUITE FILE_PATH="coverage/leecode$24dianyouxi.coverage" NAME="24dianyouxi Coverage Results" MODIFIED="1651851847644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$checkpasswd.coverage" NAME="checkpasswd Coverage Results" MODIFIED="1651675611269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$sentencereverse.coverage" NAME="sentencereverse Coverage Results" MODIFIED="1651412614867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/leecode$reversestr.coverage" NAME="reversestr Coverage Results" MODIFIED="1652196561638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$strencypt.coverage" NAME="strencypt Coverage Results" MODIFIED="1651757866510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$jumpFloor_dp.coverage" NAME="jumpFloor_dp Coverage Results" MODIFIED="1650723852704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1651322539280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
