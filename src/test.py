@@ -63,7 +63,7 @@
 # if not re.findall('[0-9]+',str):
 #     raise SystemError("只能输入数字")
 
-#sort与sorted，sort改变元序列且只能对列表排序。sorted不改变原列表，可以对列表和字典进行排序。默认是按ASCII码大小排序。
+#sort与sorted，sort改变元序列且只能对列表排序,返回值为NONE。sorted不改变原列表，可以对列表和字典进行排序。默认是按ASCII码大小排序，ASCII码大写字母比小写字母小。数字<大写字目<小写字母
 # list = ['a','f','g','B','a']
 # #dic = {"a":1,"b":2,"d":4,"c":3}
 # list.sort()
