@@ -50,19 +50,19 @@
 
 #输入只能是字母, isalnum检测字符串是否只由字母和数字组成，不能有其他字符
 # isalpha()方法检测字符串是否只由字母组成,不管大小写。
-#islower()方法只要有小写就为true
-# import re
-# str = "abcA1"
-# if str.islower() == True:
+#islower()方法只能由小写字母组成
+#isdigital,isnumeric()，是否只有数字组成，不能有其他字符
+import re
+# str = "AABBA"
+# if str.isupper() == True:
 #     print("true")
-
 
 
 # import re
 #
 # if not re.findall('[0-9]+',str):
 #     raise SystemError("只能输入数字")
-
+#sorted对字符串排序后，将形成分隔开的字符串列表。
 #sort与sorted，sort改变元序列且只能对列表排序,返回值为NONE。sorted不改变原列表，可以对列表和字典进行排序。默认是按ASCII码大小排序，ASCII码大写字母比小写字母小。数字<大写字目<小写字母
 # list = ['a','f','g','B','a']
 # #dic = {"a":1,"b":2,"d":4,"c":3}
@@ -102,3 +102,22 @@
 # list.append(c)
 # list.append(d)
 # print(list)
+
+#set也可以用for i in set 来判断是否存在集合中
+# a=set ()
+# a.add("3")
+# if '3' in a:
+#  print('True')
+
+# qw="I am Qiwsir you can read my articles im my blog".split()
+# # print(sorted(chars,key=lambda x:len(x)))
+# qw=['I', 'Am', 'Qiwsir', 'you', 'can', 'read', 'my', 'articles', 'im', 'my', 'blog']
+# # 将原数组安装小写字母的顺序排序。排序出来的结果按原数组字符原样输出。如果有相同的大小写字母，按原来排序顺序输出。
+# print(sorted(qw,key=str.upper) )       #依照字母升序排列
+
+
+# str2=['1', 'p', 'b', 0, '1', 'b', 'Q', 'U', 'm', 'R', '4', 'h', '0', 'M', 'x', '7', '4', '5', '3', 'R', 'd', '3', 'O', 'l', 'n', 'K', 'W', '7', 'd']
+# str4 = ''
+# for j in str2:
+#     str4 +=j
+# print(str4)

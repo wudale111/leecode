@@ -45,24 +45,47 @@
 #                 start += 1
 #         # Step 5: 返回答案 (最大长度)
 #         return max_len
-class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        dic, res, i = {}, 0, 0   #i是左指针,字典存着Key:字符串，value:字符串索引，指针的定义代表什么含义
-        for j in range(len(s)):  #j是右指针
-            print(dic,"循环开始")
-            if s[j] in dic:     #若当前元素在之前出现过，更新左指针
-                #当之前出现的元素在左右指针中间，左指针更新为之前元素下标+1，若不在中间，左指针不变
-                i = max(i, dic[s[j]]+1)
-                print(i,"左指针，有重复")
-            dic[s[j]] = j    #将当前元素加入哈希表中
-
-            res = max(res, j -i+1)
-            print(res,"一次循环结束")
-        return res
-A = Solution()
-s="abcdcefghi"
-A.lengthOfLongestSubstring(s)
-print(A.lengthOfLongestSubstring(s))
+# class Solution:
+#     def lengthOfLongestSubstring(self, s: str) -> int:
+#         dic, res, i = {}, 0, 0   #i是左指针,字典存着Key:字符串，value:字符串索引，指针的定义代表什么含义
+#         for j in range(len(s)):  #j是右指针
+#             #print(dic,"循环开始")
+#             if s[j] in dic:     #若当前元素在之前出现过，更新左指针
+#                 #当之前出现的元素在左右指针中间，左指针更新为之前元素下标+1，若不在中间，左指针不变
+#                 i = max(i, dic[s[j]]+1)
+#                 #print(i,"左指针，有重复")
+#             dic[s[j]] = j    #将当前元素加入哈希表中
+#
+#             res = max(res, j -i+1)
+#             #print(res,"一次循环结束")
+#         return res
+# A = Solution()
+# s="abcdcefghi"
+# A.lengthOfLongestSubstring(s)
+# print(A.lengthOfLongestSubstring(s))
 
 
 #两种算法不同的关键是如何定义，有重复元素后，左指针的开始的值的定义。
+#这道题要求返回的字符串长度，能做到返回最长子字符串的值？给定一个字符串找出只含一个字母的
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if s.isalpha() or s.isdigit():
+            return -1
+        dic, res, left = {}, 0, 0   #i是左指针,字典存着Key:字符串，value:字符串索引，指针的定义代表什么含义
+        for j in range(0,len(s)):  #j是右指针
+            #print(dic,"循环开始")
+            time = 0
+            #print(s[left:j])
+            for k in s[left:j+1] :
+                if k.isalpha():
+                    time +=1
+            if time ==1:
+                #print(left)
+                res = max(res,j-left+1)
+            else:
+                left = max(left, j)
+        return res
+A = Solution()
+s="aaaa11312"
+A.lengthOfLongestSubstring(s)
+print(A.lengthOfLongestSubstring(s))
