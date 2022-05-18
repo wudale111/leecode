@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef4e8f5e-2b83-437b-948c-9fa2126826d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/threeSumequal0.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/threeSumequal0.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Python.isSubsequence">
+  <component name="RunManager" selected="Python.threeSumequal0">
     <configuration name="isSubsequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,28 +85,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="strencypt" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="leecode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/strencypt.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,6 +99,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="threeSumequal0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="leecode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/threeSumequal0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.threeSumequal0" />
         <item itemvalue="Python.isSubsequence" />
         <item itemvalue="Python.tongjizifu" />
         <item itemvalue="Python.lengthOfLongestSubstring" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.strencypt" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +199,8 @@
       <workItem from="1652442859955" duration="3574000" />
       <workItem from="1652485768195" duration="4149000" />
       <workItem from="1652494619551" duration="26165000" />
-      <workItem from="1652785809884" duration="10508000" />
+      <workItem from="1652785809884" duration="11126000" />
+      <workItem from="1652877795437" duration="6049000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1651677242137</created>
@@ -263,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652627831054</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="first commit">
+      <created>1652800580573</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1652800580573</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,54 +287,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1651677449667" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1652627830062">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1652800579198">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1652627830062" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1652800579198" />
     <state x="800" y="198" key="FileChooserDialogImpl" timestamp="1651675568463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="800" y="198" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1651675568463" />
-    <state width="1493" height="143" key="GridCell.Tab.0.bottom" timestamp="1652796390252">
+    <state width="1493" height="260" key="GridCell.Tab.0.bottom" timestamp="1652881980418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1652796390252" />
-    <state width="1493" height="143" key="GridCell.Tab.0.center" timestamp="1652796390252">
+    <state width="1493" height="260" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1652881980418" />
+    <state width="1493" height="260" key="GridCell.Tab.0.center" timestamp="1652881980418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1652796390252" />
-    <state width="1493" height="143" key="GridCell.Tab.0.left" timestamp="1652796390252">
+    <state width="1493" height="260" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1652881980418" />
+    <state width="1493" height="260" key="GridCell.Tab.0.left" timestamp="1652881980418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1652796390252" />
-    <state width="1493" height="143" key="GridCell.Tab.0.right" timestamp="1652796390252">
+    <state width="1493" height="260" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1652881980418" />
+    <state width="1493" height="260" key="GridCell.Tab.0.right" timestamp="1652881980418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="143" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1652796390252" />
-    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1652627853020">
+    <state width="1493" height="260" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1652881980418" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1652881980419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1652627853020" />
-    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1652627853020">
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1652881980419" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1652881980419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1652627853020" />
-    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1652627853020">
+    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1652881980419" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1652881980418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1652627853020" />
-    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1652627853020">
+    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1652881980418" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1652881980419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1652627853020" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1652627838464">
+    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1652881980419" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1652800593110">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1652627838464" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1652785812697">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1652800593110" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1652888478318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1652785812697" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1652888478318" />
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1651677257078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -359,6 +368,7 @@
     <SUITE FILE_PATH="coverage/leecode$tongjizifu.coverage" NAME="tongjizifu Coverage Results" MODIFIED="1652627610061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$GPU.coverage" NAME="GPU Coverage Results" MODIFIED="1652445762994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$checkpasswd.coverage" NAME="checkpasswd Coverage Results" MODIFIED="1651675611269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/leecode$threeSumequal0.coverage" NAME="threeSumequal0 Coverage Results" MODIFIED="1652881980350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$strsort.coverage" NAME="strsort Coverage Results" MODIFIED="1652612620234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$strencypt.coverage" NAME="strencypt Coverage Results" MODIFIED="1652617564519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$jumpFloor_dp.coverage" NAME="jumpFloor_dp Coverage Results" MODIFIED="1650723852704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
