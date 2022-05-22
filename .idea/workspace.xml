@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef4e8f5e-2b83-437b-948c-9fa2126826d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Python.increasing-subsequences">
+  <component name="RunManager" selected="Python.qishuiping">
     <configuration name="erfenchazhao" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="isSubsequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="oneinmemory" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +98,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/isSubsequence.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/oneinmemory.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="threeSumequal0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="qishuiping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,7 +120,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/threeSumequal0.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/qishuiping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,7 +129,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tongjizifu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="leecode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,7 +142,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tongjizifu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.qishuiping" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.oneinmemory" />
         <item itemvalue="Python.increasing-subsequences" />
         <item itemvalue="Python.erfenchazhao" />
-        <item itemvalue="Python.threeSumequal0" />
-        <item itemvalue="Python.isSubsequence" />
-        <item itemvalue="Python.tongjizifu" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +203,8 @@
       <workItem from="1652877795437" duration="6049000" />
       <workItem from="1652888478028" duration="49000" />
       <workItem from="1652967534872" duration="644000" />
-      <workItem from="1653114278807" duration="4242000" />
+      <workItem from="1653114278807" duration="4353000" />
+      <workItem from="1653203869029" duration="16124000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1651677242137</created>
@@ -281,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652888492597</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="first commit">
+      <created>1653129383469</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653129383470</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,30 +305,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1651677449667" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1652888489784">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1653129381987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1652888489784" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1653129381987" />
     <state x="800" y="198" key="FileChooserDialogImpl" timestamp="1651675568463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="800" y="198" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1651675568463" />
-    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1653118539569">
+    <state width="1172" height="95" key="GridCell.Tab.0.bottom" timestamp="1653231761807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653118539569" />
-    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1653118539569">
+    <state width="1172" height="95" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653231761807" />
+    <state width="1172" height="95" key="GridCell.Tab.0.center" timestamp="1653231761807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1653118539569" />
-    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1653118539568">
+    <state width="1172" height="95" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1653231761807" />
+    <state width="1172" height="95" key="GridCell.Tab.0.left" timestamp="1653231761807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1653118539568" />
-    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1653118539569">
+    <state width="1172" height="95" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1653231761807" />
+    <state width="1172" height="95" key="GridCell.Tab.0.right" timestamp="1653231761807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1653118539569" />
+    <state width="1172" height="95" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1653231761807" />
     <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1652881980419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -336,14 +345,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1652881980419" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1652888511021">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1653129399526">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1652888511021" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1653114348953">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1653129399526" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1653204082081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1653114348953" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1653204082081" />
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1651677257078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -372,7 +381,8 @@
     <SUITE FILE_PATH="coverage/leecode$huisu.coverage" NAME="huisu Coverage Results" MODIFIED="1651842938807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$doublepointerthreesum.coverage" NAME="doublepointerthreesum Coverage Results" MODIFIED="1652495486913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$combinationSum3.coverage" NAME="combinationSum3 Coverage Results" MODIFIED="1652190461132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/leecode$test.coverage" NAME="test Coverage Results" MODIFIED="1652626830619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/leecode$test.coverage" NAME="test Coverage Results" MODIFIED="1653225996283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/leecode$qishuiping.coverage" NAME="qishuiping Coverage Results" MODIFIED="1653231761798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$lengthOfLongestSubstring.coverage" NAME="lengthOfLongestSubstring Coverage Results" MODIFIED="1652626892798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$tongjizifu.coverage" NAME="tongjizifu Coverage Results" MODIFIED="1652627610061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$increasing_subsequences.coverage" NAME="increasing-subsequences Coverage Results" MODIFIED="1653118539551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -386,5 +396,6 @@
     <SUITE FILE_PATH="coverage/leecode$integerBreak.coverage" NAME="integerBreak Coverage Results" MODIFIED="1651329984378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$stringsorted.coverage" NAME="stringsorted Coverage Results" MODIFIED="1651417389064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/leecode$zuichangzichuang.coverage" NAME="zuichangzichuang Coverage Results" MODIFIED="1651669352211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/leecode$oneinmemory.coverage" NAME="oneinmemory Coverage Results" MODIFIED="1653223938084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

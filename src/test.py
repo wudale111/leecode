@@ -121,3 +121,35 @@ import re
 # for j in str2:
 #     str4 +=j
 # print(str4)
+
+# str1 = input()
+# str2 = []
+# for i in str1:
+#     str2.append((ord(i)))
+# str2.sort()
+# print(str2)
+# str3 =''
+# for j in str2:
+#     str3 +=chr(j)
+# print(str3)
+
+
+num = 1.5
+str2 =str(num)
+
+str3 = str2.split('.')
+print(str3)
+if int(str3[1][0]) >=5:
+    print(int(str3[0])+1)
+else:
+    print(int(str3[0]))
+
+
+
+
+# str1 ='I'
+# print(ord(str1))
+# num =73
+# print(chr(num))
+
+
