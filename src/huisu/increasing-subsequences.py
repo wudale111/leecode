@@ -1,0 +1,73 @@
+'''
+给定一个整型数组, 你的任务是找到所有该数组的递增子序列，递增子序列的长度至少是2。
+示例:
+输入: [4, 6, 7, 7]
+输出: [[4, 6], [4, 7], [4, 6, 7], [4, 6, 7, 7], [6, 7], [6, 7, 7], [7,7], [4,7,7]]
+说明:
+给定数组的长度不会超过15。
+数组中的整数范围是 [-100,100]。
+给定数组中可能包含重复数字，相等的数字应该被视为递增的一种情况。
+'''
+
+# class Solution:
+#     def increasesub(self,nums):
+#         path = []
+#         res = []
+#
+#
+#         def backtrack(nums,startindex):
+#             #这里能用path[:]?path此时是什么，应该是个数组？
+            # 终止条件
+            # 本题其实类似求子集问题，也是要遍历树形结构找每一个节点，所以和回溯算法：求子集问题！一样，可以不加终止条件，startIndex每次都会加1，并不会无限递归。
+#             if len(path[:]) >= 2:
+#                 res.append(path[:])
+#             for i in range(startindex,len(nums)):
+#                 #因为第一个数nums[i-1]会超出范围，所以要用nums[i]>path[-1]来限定递增条件。
+#                 repeat = []
+#                 if nums[i] in repeat:
+#                     #为什么是continue不是berak?
+#                     continue
+#                 #为什么会要这个判断？不是第一次循环就是大于等于1的？
+#                 if len(path)>=1:
+#                     #新循环进来的数，要比前面添加过的数path数组最后一个数大、而不是比nums数组最后一个数大！！！！
+#                     #if nums[i] < nums[-1]:
+#                     if nums[i]<path[-1]:
+#                         continue
+#                 #repeat会不会有重叠问题？
+#                 repeat.append(nums[i])
+#                 path.append(nums[i])
+#                 backtrack(nums,i+1)
+#                 path.pop()
+#         backtrack(nums,0)
+#         return res
+# A =Solution()
+# nums=[4,7,6,7]
+# print(A.increasesub(nums))
+
+class Solution:
+    def subsequence(self,nums,k):
+        path = []
+        res =[]
+        def backtrack(nums,k,startindex):
+            if len(path)>=k:
+                res.append(path[:])
+                #有这个return和没有这个return有什么区别？
+                #return
+            for i in range(startindex,len(nums)):
+                #这里先不能比较，因为path[-1]一开始没有数，要if len(path)>=1
+                #if nums[i]>=path[-1]:
+                if len(path)>=1:
+                    #新循环进来的数，要比前面添加过的数path数组最后一个数大、而不是比nums数组最后一个数大！！！！
+                    if nums[i] < path[-1]:
+                    #nums[i]<nums[i-1]行不通，因为有时候不是跟数组里的前一个数对比。
+                    #if nums[i] < nums[i-1]:
+                    #[[4, 7], [4, 7, 7], [4, 7], [7, 7], [6, 7]]
+                        continue
+                path.append(nums[i])
+                backtrack(nums,k,i+1)
+                path.pop()
+        backtrack(nums,2,0)
+        return res
+A =Solution()
+nums=[4,7,6,7]
+print(A.subsequence(nums,2))
