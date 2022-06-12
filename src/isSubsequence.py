@@ -17,6 +17,12 @@ aab会导致index不变，所以不能用这个max方法来判断自增。
 # for i in range(len(s)):
 #     if s[i] in t:
 #         index = max(index,t.index(s[i]))
+#         print(index)
+#         # abc
+#         # cgfabc
+#         # 3
+#         # 4
+#         # 4
 #         if index==t.index(s[i]):
 #             time +=1
 #         else:
@@ -30,26 +36,52 @@ aab会导致index不变，所以不能用这个max方法来判断自增。
 
 #双指针
 #这里为什么不能用for呢？因为不是遍历字符串s或者t,
+# class Solution:
+#     def isSubsequence(self, s: str, t: str) -> bool:
+#         i=j=0
+#         n,m=len(s),len(t)
+#         while(i<n and j<m):
+#             #aac
+#             #bvvabaac
+#             if s[i] ==t[j]:
+#                 i +=1
+#             j +=1
+#         #判断是否为子序列，最终要靠i指针能否走完s字符串。
+#         return i==n
+#         # n, m = len(s), len(t)
+#         # i = j = 0
+#         # while i < n and j < m:
+#         #     if s[i] == t[j]:
+#         #         i += 1
+#         #     j += 1
+#         # return i == n
+# A = Solution()
+# s= 'abce'
+# t = 'abdadsdac'
+# print(A.isSubsequence(s,t))
+
+
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
-        i=j=0
-        n,m=len(s),len(t)
-        while(i<n and j<m):
-            if s[i] ==t[j]:
-                i +=1
-            j +=1
-        #判断是否为子序列，最终要靠i指针能否走完s字符串。
-        return i==n
-        # n, m = len(s), len(t)
-        # i = j = 0
-        # while i < n and j < m:
-        #     if s[i] == t[j]:
-        #         i += 1
-        #     j += 1
-        # return i == n
-A = Solution()
-s= 'abce'
-t = 'abdadsdac'
-print(A.isSubsequence(s,t))
+        left,right =0,0
+        m,n=len(s),len(t)
+        #为什么不用for i in range(len(s))??
+        #while left<m and right <n:
+        for left in range(len(s)):
+            #如果一直没有相等的，right会越界。
+            # while s[left]!=t[right] and right<n:
+            #     right +=1
+            if s[left]==t[right]:
+                left +=1
+                right +=1
+            else:
+                #这样遍历right不会走完，只是不相等便加一，循环下个left了。
+                right +=1
+
+
+
+
+
+
 
 

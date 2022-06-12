@@ -9,13 +9,13 @@ class Solution:
                 return
             for i in range(startIndex,n+1):
                 path.append(i)  #处理节点
-                # print(path)
-                # print(i,"11111111111")
+                print(path)
+                print(i,"11111111111")
 
                 backtrack(n,k,i+1)  #递归
-                #print(i,"22222222222")
+                print(i,"22222222222")
                 path.pop()  #回溯，撤销处理的节点
-                #print(i,"333333333333")
+                print(i,"333333333333")
 
         backtrack(n,k,1)
         #5,2,1 startindex=1,i=1

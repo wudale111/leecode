@@ -134,15 +134,15 @@ import re
 # print(str3)
 
 
-num = 1.5
-str2 =str(num)
-
-str3 = str2.split('.')
-print(str3)
-if int(str3[1][0]) >=5:
-    print(int(str3[0])+1)
-else:
-    print(int(str3[0]))
+# num = 1.5
+# str2 =str(num)
+#
+# str3 = str2.split('.')
+# print(str3)
+# if int(str3[1][0]) >=5:
+#     print(int(str3[0])+1)
+# else:
+#     print(int(str3[0]))
 
 
 
@@ -152,4 +152,28 @@ else:
 # num =73
 # print(chr(num))
 
+# print(' '.join('abcd'))
+# res = []
+# out_trains = ['3']
+# in_trains = ['1','2']
+# print(out_trains + in_trains[::-1])
+# res.append(' '.join(out_trains + in_trains[::-1]))
+# print(res)
 
+# path =[]
+# if 1>path[-1]:
+#     print(path[-1])
+
+
+#map不能用sort,是个内存值，能遍历，能用list
+# n=map(int,input().split())
+# print(n)
+# for i in n:
+#     print(i)
+# n,k=map(int,input().split())
+# str1=map(int,input().split())
+# str1 =list(str1)
+# print(str1)
+# str1.sort()
+# for i in range(k+1):
+#     print(n[i],end=(' '))
