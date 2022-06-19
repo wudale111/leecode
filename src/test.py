@@ -177,3 +177,9 @@ import re
 # str1.sort()
 # for i in range(k+1):
 #     print(n[i],end=(' '))
+
+# dp=[0]*4
+# dp[3]=max(6,7,8)
+# print(dp[3])
+arr3=[1,1,2,6,4]
+print(list(set(arr3)))
