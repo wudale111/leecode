@@ -31,27 +31,60 @@
 请注意，[3,1,2]这个序列是不可能实现的。
 '''
 
-while True:
-    try:
-        n = int(input())
-        trains = input().strip().split(' ')
-        res = []
-        def rec_trains(cur_idx, in_trains, out_trains):
-            # 如果原始火车列表的最后一个元素已经进站，此时只能出站，将入站列表中的火车倒序加入出站火车中
-            if trains[-1] in in_trains:
-                res.append(' '.join(out_trains + in_trains[::-1]))
-                return
-            # 如果进站列表为空，此时只能进站，进站列表加上当前火车，出站列表不变
-            elif in_trains == []:
-                rec_trains(cur_idx + 1, in_trains + [trains[cur_idx]], out_trains)
-            # 否则，就既有可能进站也有可能出站
-            else:
-                # 出站，当前火车索引不变，进站火车列表减去最后一个元素，出站列表加上进站列表刚刚出站的火车
-                rec_trains(cur_idx, in_trains[:-1], out_trains + [in_trains[-1]])
-                # 进站，当前火车索引加1，进站列表加上当前火车，出站列表不变
-                rec_trains(cur_idx + 1, in_trains + [trains[cur_idx]], out_trains)
-        rec_trains(0, [], [])
-        res.sort()
-        print('\n'.join(res))
-    except:
-        break
+# while True:
+#     try:
+#         n = int(input())
+#         trains = input().strip().split(' ')
+#         res = []
+#         def rec_trains(cur_idx, in_trains, out_trains):
+#             # 如果原始火车列表的最后一个元素已经进站，此时只能出站，将入站列表中的火车倒序加入出站火车中
+#             if trains[-1] in in_trains:
+#                 res.append(' '.join(out_trains + in_trains[::-1]))
+#                 return
+#             # 如果进站列表为空，此时只能进站，进站列表加上当前火车，出站列表不变
+#             elif in_trains == []:
+#                 rec_trains(cur_idx + 1, in_trains + [trains[cur_idx]], out_trains)
+#             # 否则，就既有可能进站也有可能出站
+#             else:
+#                 # 出站，当前火车索引不变，进站火车列表减去最后一个元素，出站列表加上进站列表刚刚出站的火车
+#                 rec_trains(cur_idx, in_trains[:-1], out_trains + [in_trains[-1]])
+#                 # 进站，当前火车索引加1，进站列表加上当前火车，出站列表不变
+#                 rec_trains(cur_idx + 1, in_trains + [trains[cur_idx]], out_trains)
+#         rec_trains(0, [], [])
+#         res.sort()
+#         print('\n'.join(res))
+#     except:
+#         break
+a=1
+b=2
+c=3
+d=4
+if a==1:
+    print(a)
+
+elif b== 2:
+    print(b)
+else:
+    print(c)
+
+
+
+
+# res = []
+# def dfs(wait, stack, out):
+#     if not wait and not stack:
+#         res.append(' '.join(map(str, out)))
+#     if wait:  # 入栈
+#         dfs(wait[1:], stack + [wait[0]], out)
+#     if stack:  # 出栈
+#         dfs(wait, stack[:-1], out + [stack[-1]])
+#
+#
+# while True:
+#     try:
+#         n, nums = int(input()), list(map(int, input().split()))
+#         dfs(nums, [], [])
+#         for i in sorted(res):
+#             print(i)
+#     except:
+#         break
