@@ -181,5 +181,19 @@ import re
 # dp=[0]*4
 # dp[3]=max(6,7,8)
 # print(dp[3])
-arr3=[1,1,2,6,4]
-print(list(set(arr3)))
+# arr3=[1,1,2,6,4]
+# print(list(set(arr3)))
+
+# s='110011101'
+# print(s.split('0'))
+
+
+# print(2%3)
+# print(2/3)
+# print(2//3)
+# 2
+# 0.6666666666666666
+# 0
+dp=['12222', '12225', '12229', '12252', '12255', '12259']
+ret = sorted(dp, key=lambda x: int(x))[0]
+print(ret)
