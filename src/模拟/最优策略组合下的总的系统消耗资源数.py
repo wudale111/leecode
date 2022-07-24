@@ -1,3 +1,9 @@
+'''
+3
+15 8 17
+12 20 9
+11 7 5
+'''
 while 1:
     try:
         n = int(input())
@@ -15,7 +21,10 @@ while 1:
             for c in [0,1,2]:
                 if c !=com:
                     minlist.append(dfs(idx, c, nums[idx][c]) + val)
-                    print(minlist)
+                    print(idx,c,nums[idx][c])
+                    print(dfs(idx, c, nums[idx][c]),val,"-----------")
+                    print(minlist,"1111111111")
+
 
             min2=min(minlist)
             return  min2
