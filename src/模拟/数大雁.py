@@ -83,39 +83,40 @@ k代表结尾，其实也是青蛙的起始（一次喊叫结束），所以遇�
 #         return res;
 #     }
 
-def minNumberOfFrogs(croakOfFrogs):
-        #int c,r,o,a,k
-        c = 0; r = 0; o = 0; a = 0;k = 0
-        #char []croakOfFrogs = croakOfFrogs.toCharArray()
-        res = 0
-        for i in range(len(croakOfFrogs)):
-            if croakOfFrogs[i] == 'c':
-                if k > 0:
-                    k -=1
-                else:
-                    res +=1
-                c +=1
-            elif croakOfFrogs[i] == 'r':
-                c -=1
-                r +=1
-            elif croakOfFrogs[i] == 'o':
-                r -=1
-                o +=1
-            elif croakOfFrogs[i] == 'a':
-                o -=1
-                a +=1
-            elif croakOfFrogs[i] == 'k':
-                a -=1
-                k +=1
+# def minNumberOfFrogs(croakOfFrogs):
+#         #int c,r,o,a,k
+#         c = 0; r = 0; o = 0; a = 0;k = 0
+#         #char []croakOfFrogs = croakOfFrogs.toCharArray()
+#         res = 0
+#         for i in range(len(croakOfFrogs)):
+#             if croakOfFrogs[i] == 'c':
+#                 if k > 0:
+#                     k -=1
+#                 else:
+#                     res +=1
+#                 c +=1
+#             elif croakOfFrogs[i] == 'r':
+#                 c -=1
+#                 r +=1
+#             elif croakOfFrogs[i] == 'o':
+#                 r -=1
+#                 o +=1
+#             elif croakOfFrogs[i] == 'a':
+#                 o -=1
+#                 a +=1
+#             elif croakOfFrogs[i] == 'k':
+#                 a -=1
+#                 k +=1
+#
+#             if c < 0 or r < 0 or o < 0 or a < 0:
+#                 break
+#
+#         if c != 0 or r != 0 or o != 0 or a != 0:
+#             return -1
+#
+#         return res
+# if __name__=='__main__':
+#     croakOfFrogs='crcoakroak'
+#     print(minNumberOfFrogs(croakOfFrogs))
 
-            if c < 0 or r < 0 or o < 0 or a < 0:
-                break
 
-        if c != 0 or r != 0 or o != 0 or a != 0:
-            return -1
-
-        return res
-if __name__=='__main__':
-    croakOfFrogs='crcoakroak'
-
-    print(minNumberOfFrogs(croakOfFrogs))
