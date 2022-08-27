@@ -1,0 +1,43 @@
+class Solution:
+    def __init__(self):
+        self.allow = {}
+        self.head=0
+        self.end=100
+    def request(self,size):
+        addressHead = self.head
+        if size<=0 or size>100:
+            return 'error'
+        if len(self.allow)==0:
+            self.allow[self.head]=size
+        else:
+            headList = [k for k,v in self.allow.items()]
+            for i in range(len(headList)):
+                if headList[i]-addressHead >= size:
+                    self.allow[addressHead]=addressHead+size
+                else:
+                    addressHead = self.allow.get(headList[i])
+            if size<=(self.end-addressHead):
+                self.allow[addressHead]=addressHead+size
+            else:
+                return 'error'
+        return str(addressHead)
+    def release(self,startAddress):
+        try:
+            self.allow[startAddress]
+            del self.allow[startAddress]
+            return True
+        except Exception as e:
+            return False
+
+if __name__ == '__main__':
+    so = Solution()
+    x=int(input())
+    for i in range(x):
+        temp = input().split("=")
+        if temp[0]=='REQUEST':
+            print(so.request(int(temp[1])))
+        else:
+            ret = so.release(int(temp[1]))
+            if not ret:
+                print('error')
+
