@@ -1,0 +1,79 @@
+'''# n=list(input())
+# dic[n[1]]=int(n[0])
+#初步思路为字典通过键值对的方式排序，较麻烦,直接列表推导两种属性分别判断即可'''
+ 
+ 
+def card_queues(queues):
+    '''#比较数值大小,因为数值与列表索引一一对应，直接用索引来代替对应原本的数值大小
+    #split()默认对所有的空格进行切分 空格，\n,\t，需要考虑到输入形式的替换
+    #下述列表推导，r为数值，s为颜色'''
+    queues = ['23456789TJQKA'.index(r) for r, s in queues.split()]
+    queues.sort()
+    return queues
+ 
+ 
+def judge_straight(queues):  
+    '''# 判断是否为顺子，数值相差为4，利用set去重为5'''
+    queues = card_queues(queues)
+    return max(queues) - min(queues) == 4 and len(set(queues)) == 5
+ 
+ 
+def judge_color_only(queues):  # 判断是否为同花
+    hand_flush = [s for r, s in queues.split()]
+    return len(set(hand_flush)) == 1
+'''#对于此处的列表推导其实逻辑上更为清晰，但是语言处理较复杂，可按照如下方式处理
+#对于数值：queues = ['23456789TJQKA'.index(r) for r in queues if r in '23456789TJQKA']
+#对于花色：hand_flush=['SCDH'.index(s) for s in queues if s in 'SCDH']'''
+ 
+def judge_32(queues):  # 判断是否为3带2
+    for r, s in queues.split():
+        if queues.count(r) == 3:
+            return True
+    return None
+ 
+ 
+def judge_41(queues):
+    for r, s in queues.split():
+        if queues.count(r) == 4:
+            return True
+    return None
+ 
+ 
+def type_check(queues):  # 根据基本类型的组合来判断复合类型
+    # 同花顺
+    if judge_straight(queues) and judge_color_only(queues):
+        print(1)
+    # 4带1
+    elif judge_41(queues):
+        print(2)
+    # 葫芦：3带1对
+    elif judge_32(queues) and len(set(queues)) == 2:
+        print(3)
+    # 同花
+    elif judge_color_only(queues):
+        print(4)
+    # 顺子
+    elif judge_straight(queues):
+        print(5)
+    # 3带2个单张
+    elif judge_32(queues) and len(set(queues)) == 3:
+        print(6)
+    else:
+        print(7)
+ 
+ 
+if __name__ == "__main__":
+    n = "2 H" \
+        "3 C" \
+        "6 S" \
+        "5 S" \
+        "4 S"
+    a = []
+    '''对输入的形式进行转换，改成2H 3C 6S 5S 4S类型'''
+    n.replace('10', 'T')
+    for i in range(0, len(n), 3):
+        x = str(n[i]) + str(n[i + 2])
+        a.append(x)
+    str1 = " ".join(a)
+    print(str1)
+    type_check(str1)
