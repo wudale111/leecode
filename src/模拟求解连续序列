@@ -1,0 +1,15 @@
+class SeqCa:
+    def solution(self, num, k):
+        Flag = 0
+        start = int((num / k) - k)
+        end = (num // k) + k
+        for i in range(start, end):
+            if sum(range(i, i + k)) == num:
+                print(" ".join(list(map(str, range(i, i + k)))))
+                Flag = 1
+                break
+        if Flag == 0:
+            print(-1)
+
+if __name__ == "__mian__":
+	SeqCa().solution(525, 6)
