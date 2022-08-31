@@ -1,0 +1,44 @@
+ public static void main(String[] args){
+        //机器人走迷宫
+      int l=6;
+      int d =4;
+      int res[][]=new int[4][6];
+      res[1][0]=1;res[1][1]=1;res[1][2]=1;res[2][4]=1;res[2][5]=1;
+      isV(res, 0,res.length-1);
+      int xianj =0;
+      int bukeda =0;
+      for(int i=0;i<res.length;i++){
+          for (int j=0;j<res[0].length;j++){
+              if(res[i][j]==3){
+                  xianj++;
+                  continue;
+              }
+              if(res[i][j]==0){
+                  bukeda++;
+                  continue;
+              }
+          }
+      }
+      System.out.print(xianj+" "+bukeda);
+    }
+    public static boolean  isV(int res[][],int x,int y){
+        if(x>=res[0].length||y<0){
+            return false;
+        }
+        if(x==res[0].length-1&&y==0){
+            res[0][res[0].length-1]=2;
+            return true;
+        }
+        if(res[y][x]==1){
+            return false;
+        }
+        boolean s =isV(res, x + 1, y);
+        boolean s1=isV(res, x, y - 1);
+        boolean b1 = s || s1;
+        if(b1==false){
+            res[y][x]=3;
+        }else {
+            res[y][x]=2;
+        }
+         return b1;
+    }
