@@ -30,66 +30,75 @@ ACBFGED
 
 '''
 from typing import List
-# Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-# root = TreeNode(1,2,3)
-# print(root.val)
-# print(root.left)
+    def __init__(self,val=0,left=None,right=None):
+        self.val=val
+        self.left=left
+        self.right=right
 class Solution:
-    def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
-        # 实际上inorder 和 postorder一定是同时为空的，因此你无论判断哪个都行
-        if not preorder:
+    def buildTree(self, preorder: List[str], inorder: List[str]) -> TreeNode:
+        if not (preorder and inorder):
             return None
-        root = TreeNode(preorder[0])
-
-        i = inorder.index(root.val)
-        root.left = self.buildTree(preorder[1:i + 1], inorder[:i])
-        root.right = self.buildTree(preorder[i + 1:], inorder[i+1:])
+        root =TreeNode(preorder[0])
+        mid_root=inorder.index(root.val)
+        root.left=self.buildTree(preorder[1:mid_root+1],inorder[:mid_root])
+        root.right=self.buildTree(preorder[mid_root+1:],inorder[mid_root+1:])
         return root
     
-    def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
-        if not root: return []
-        # 跟结点入queue
-        queue = [root]
-        res = []
-        while queue:
-            res.append([node.val for node in queue])
-            # 存储当前层的孩子节点列表
-            ll = []
-            # 对当前层的每个节点遍历
-            for node in queue:
-                # 如果左子节点存在，入队列
-                if node.left:
-                    ll.append(node.left)
-                # 如果右子节点存在，入队列
-                if node.right:
-                    ll.append(node.right)
-            # 后把queue更新成下一层的结点，继续遍历下一层
-            queue = ll
-        # 列表倒序
-        return res[::-1]
+    #后续遍历
+    # def lastorder(self,root:TreeNode):
+    #     if root ==None:
+    #         return
+    #     self.lastorder(root.left)
+    #     self.lastorder(root.right)
+    #     print(root.val,end='')
+    
+    #前序遍历输出
+    # def preorder(self,root:TreeNode):
+    #     if not root:
+    #         return
+    #     print(root.val,end='')
+    #     self.preorder(root.left)
+    #     self.preorder(root.right)
+    
+    #中序遍历输出
+    # def inorder(self,root:TreeNode):
+    #     if not root:
+    #         return
+    #     self.inorder(root.left)
+    #     print(root.val,end='')
+    #     self.inorder(root.right)
+    
+    #层序遍历
+    # def levelOrder(self, root):
+    '''
+    本题使用 DFS 同样能做。由于题目要求每一层的节点都是从左到右遍历，因此递归时也要先递归左子树、再递归右子树。
+    DFS 做本题的主要问题是： DFS 不是按照层次遍历的。为了让递归的过程中同一层的节点放到同一个列表中，
+    在递归时要记录每个节点的深度 level。递归到新节点要把该节点放入 level 对应列表的末尾。
+    当遍历到一个新的深度 level，而最终结果 res 中还没有创建 level 对应的列表时，
+    应该在 res 中新建一个列表用来保存该 level 的所有节点。
+    '''
+    #     res = []
+    #     self.level(root, 0, res)
+    #     return res
+    # # def level(self, root, level, res):
+    #     if not root: return
+    #     if len(res) == level: res.append([])
+    #     res[level].append(root.val)
+    #     if root.left: self.level(root.left, level + 1, res)
+    #     if root.right: self.level(root.right, level + 1, res)
 
-
-    def lastorder(self, root: TreeNode): # 输出后序遍历
-        if root == None:
-            return
-        self.lastorder(root.left)
-        self.lastorder(root.right)
-        print(root.val)
 
 
 
 A=Solution()
 preorder = ['D','B','A','C','E','G','F']
 inorder = ['A','B','C','D','E','F','G']
-A.buildTree(preorder,inorder)
-print(A.buildTree(preorder,inorder))
-#print(A.levelOrderBottom(A.buildTree(preorder,inorder)))
-print(A.lastorder(A.buildTree(preorder,inorder)))
+res=[]
+# # print(A.buildTree(preorder,inorder).val)
+# # A.lastorder(A.buildTree(preorder,inorder))
+# A.preorder(A.buildTree(preorder,inorder))
+print(A.levelOrder(A.buildTree(preorder,inorder)))
 
 
 
