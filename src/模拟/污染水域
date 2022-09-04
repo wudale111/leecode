@@ -1,0 +1,111 @@
+'''
+【编程题目 | 200分】污染水域 [ 200 / 中等 ]
+
+题目描述
+输入一行字符串，字符串可转换为N*N的数组，数组可认为是一个水域，判断多少天后，水域被全部污染。
+数组中只有0和1，0表示纯净，1表示污染，每天只可污染上下左右的水域，如果开始全部被污染，或永远无法污染，则返回-1。
+
+示例
+输入
+1,0,1,0,0,0,1,0,1
+1
+输出
+2
+1
+解释：
+
+转化为数组为：
+
+1 0 1
+0 0 0
+1 0 1
+1
+2
+3
+4
+5
+第一天后水域变为
+
+1 1 1
+1 0 1
+1 1 1
+1
+2
+3
+4
+5
+第二天全部被污染
+1
+输入
+0,0,0,0
+1
+输出
+-1
+1
+思路分析
+这道题是典型的图的多源BFS问题，可以参考【Leetcode】图的多源BFS详解加强对图的多源BFS方法的学习。
+
+这道题跟leetcode：1162. 地图分析意思是一样的，都是从多个源点开始，向四周扩展，问多少次能扩展完。
+
+解题流程：
+
+先把所有的污染源都入队
+然后从各个污染源同时开始一圈一圈的向净水扩散，
+那么最后扩散到的净水就是花费的天数！
+注：这里有一个小细节就是，可以直接修改原数组，扩散到了就在原数组上加1，最后统计数组中最大值-1即可。这里我同时把队列输出数组定义到循环外面，这样就可以直接输出最后一次扩散的值减1即可。
+————————————————
+版权声明：本文为CSDN博主「小朱小朱绝不服输」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_44052055/article/details/125793750
+'''
+
+import java.util.*;
+
+public class polluteWater {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String[] s = in.nextLine().split(",");
+        int N = (int)Math.sqrt(s.length);
+        int[][] grid = new int[N][N];  // 将一维数组转化为二维数组
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                grid[i][j] = Integer.parseInt(s[j + i * N]);
+            }
+        }
+        // 图的多源BFS
+        int[] dx = new int[]{0, 0, 1, -1};
+        int[] dy = new int[]{1, -1, 0, 0};
+        Queue<int[]> queue = new ArrayDeque<>();
+        // 将所有污染源都入队
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (grid[i][j] == 1) {
+                    queue.offer(new int[]{i, j});
+                }
+            }
+        }
+        // 全部被无污染或者永远无法被污染
+        if (queue.size() == 0 || queue.size() == N * N) {
+            System.out.println(-1);
+            return;
+        }
+        // 从各个污染源开始，一圈圈遍历
+        int[] node = null;  // 定义到循环外面，方便输出结果
+        while (!queue.isEmpty()) {
+            node = queue.poll();
+            int x = node[0], y = node[1];
+            for (int i = 0; i < 4; i++) {  // 上下左右扩散
+                int newX = x + dx[i];
+                int newY = y + dy[i];
+                // 越界或者不是净水
+                if (newX < 0 || newX >= N || newY < 0 || newY >= N || grid[newX][newY] != 0) {
+                    continue;
+                }
+                // 直接修改原数组，把净水改为污染源
+                grid[newX][newY] = grid[x][y] + 1;
+                queue.offer(new int[]{newX, newY});
+            }
+        }
+        // 返回最后一次遍历到净水的天数 - 1，或者输出当前数组的最大值-1
+        System.out.println(grid[node[0]][node[1]] - 1);
+    }
+}
