@@ -1,0 +1,150 @@
+'''
+【编程题目 |200分】 找城市【2022 Q1,Q2 考试题】
+
+题目描述
+一个城市规划问题，一个地图有很多城市，两个城市之间只有一种路径，切断通往一个城市i的所有路径之后，其他的城市形成了独立的城市群，这些城市群里最大的城市数量，就是聚集度DPi，现在给出一个地图上各个城市的路径，输出聚集度最小的城市，如果有多个结果，按照编号从小到大
+
+输入描述
+第一行输入 城市节点数目N
+后面N-1输入城市之间的路径
+
+输出描述
+聚集度最小的城市
+
+示例
+输入
+5
+1 2
+2 3
+3 4
+4 5
+1
+2
+3
+4
+5
+输出
+3
+1
+说明
+将通往3的所有路径切断，最大城市群数量是2，其他任意城市切断后，最大城市群数量都比2大，所以输出3
+1
+输入
+6
+1 2
+2 3
+2 4
+3 5
+3 6
+1
+2
+3
+4
+5
+6
+输出
+2 3
+1
+说明
+将通往2或者3的所有路径切断，最大城市群数量是3，其他任意城市切断后，最大城市群数量都比3大，所以输出2 3
+1
+思路分析
+题目中描述切断通往一个城市i的所有路径之后，其他的城市形成了独立的城市群，这比较容易想到并查集，两个城市相连，就把两个城市合并。
+
+循环n次遍历所有城市的结果，每个城市遍历所有的链接信息，如果出现当前循环需要排除的城市，则不执行本次合并操作。
+
+需要注意的是：
+
+并查集模板中初始化时，需要从1开始，因为城市的编号是从1开始。
+统计每个城市所在的最大的城市数量，即聚集度
+并查集方法不要害怕，因为并查集类是有固定模板，主函数一般只需要将相连的两个合并操作即可，最后统计数量。可以参考：【Leetcode】并查集（Union-Find）算法。
+————————————————
+版权声明：本文为CSDN博主「小朱小朱绝不服输」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_44052055/article/details/125873015
+import java.util.Scanner;
+
+public class jujidu {
+    static class UF {  // 路径压缩的加权quick-union算法模板
+        int N;
+        int count;
+        int[] id;
+        int[] sz;
+
+        private UF (int n) {
+            N = n;
+            count = n;
+            id = new int[n + 1];
+            sz = new int[n + 1];
+            for (int i = 1; i <= n; i++) {  // 这里需要注意，城市是从1开始的
+                id[i] = i;
+                sz[i] = 1;
+            }
+        }
+
+        public int getMax () {  // 统计并查集的最大值
+            int max = 0;
+            for (int i = 1; i < sz.length; i++) {
+                max = Math.max(max, sz[i]);
+            }
+            return max;
+        }
+
+        public void union (int p, int q) {
+            int pRoot = find(p);
+            int qRoot = find(q);
+            if (pRoot != qRoot) {
+                if (sz[pRoot] < sz[qRoot]) {
+                    id[pRoot] = qRoot;
+                    sz[qRoot] += sz[pRoot];
+                } else {
+                    id[qRoot] = pRoot;
+                    sz[pRoot] += sz[qRoot];
+                }
+                count--;
+            }
+        }
+
+        private int find (int p) {
+            if (p == id[p]) {
+                return p;
+            }
+            id[p] = find(id[p]);
+            return id[p];
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[][] arr = new int[n][2];
+        for (int i = 0; i < n - 1; i++) {
+            arr[i][0] = in.nextInt();
+            arr[i][1] = in.nextInt();
+        }
+        // 并查集
+        int res = Integer.MAX_VALUE;  // 统计最小聚集度
+        int[] maxArray = new int[n + 1];  // 统计每个城市的聚集度
+        for (int i = 1; i <= n; i++) {  // 对于每一个城市
+            UF uf = new UF(n);
+            for (int j = 0; j < n - 1; j++) {  // 判断每一条路径
+                if (arr[j][0] == i || arr[j][1] == i)  {
+                    continue;
+                } else {
+                    uf.union(arr[j][0], arr[j][1]);
+                }
+            }
+            maxArray[i] = uf.getMax();  // 每个城市对应的聚集度
+            res = Math.min(res, maxArray[i]);  // 切掉路径后的最小聚集度
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i < maxArray.length; i++) {
+            if (maxArray[i] == res) {
+                sb.append(i).append(" ");
+            }
+        }
+        sb.setLength(sb.length() - 1);
+        System.out.println(sb);
+    }
+}
+
+'''
