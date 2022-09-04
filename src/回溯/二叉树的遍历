@@ -1,0 +1,95 @@
+'''
+题目描述
+有一棵二叉树，每个节点由一个大写字母标识(最多26个节点）。现有两组字母，分别表示前序遍历（父节点->左孩子->右孩子）和中序遍历（左孩子->父节点->右孩子）的结果，请你输出后序遍历（左孩子->右孩子->父节点）的结果。
+
+输入
+每个输入文件包含两串字母，各占一行。（每串只包含大写字母）
+第一行字母表示前序遍历结果，第二行字母表示中序遍历结果。
+
+输出
+输出仅一行，表示后序遍历的结果，结尾换行。
+
+样例
+输入样例 1 复制
+
+DBACEGF
+ABCDEFG
+输出样例 1
+
+ACBFGED
+
+
+解题思路：
+1、先序遍历的第一个节点就是整棵二叉树的根节点，因此根据二叉树的根节点找到根节点在中序遍历中的位置。
+
+2、中序遍历中的根节点的左边就是左子树，右边就是右子树，因此可以通过不断递归，来找到每一棵树。
+
+3、得到二叉树后，通过层序遍历将结果添加到结果的子串当中。
+
+4、层序遍历需要一个队列来记录遍历顺序。
+
+'''
+from typing import List
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+# root = TreeNode(1,2,3)
+# print(root.val)
+# print(root.left)
+class Solution:
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
+        # 实际上inorder 和 postorder一定是同时为空的，因此你无论判断哪个都行
+        if not preorder:
+            return None
+        root = TreeNode(preorder[0])
+
+        i = inorder.index(root.val)
+        root.left = self.buildTree(preorder[1:i + 1], inorder[:i])
+        root.right = self.buildTree(preorder[i + 1:], inorder[i+1:])
+        return root
+    
+    def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
+        if not root: return []
+        # 跟结点入queue
+        queue = [root]
+        res = []
+        while queue:
+            res.append([node.val for node in queue])
+            # 存储当前层的孩子节点列表
+            ll = []
+            # 对当前层的每个节点遍历
+            for node in queue:
+                # 如果左子节点存在，入队列
+                if node.left:
+                    ll.append(node.left)
+                # 如果右子节点存在，入队列
+                if node.right:
+                    ll.append(node.right)
+            # 后把queue更新成下一层的结点，继续遍历下一层
+            queue = ll
+        # 列表倒序
+        return res[::-1]
+
+
+    def lastorder(self, root: TreeNode): # 输出后序遍历
+        if root == None:
+            return
+        self.lastorder(root.left)
+        self.lastorder(root.right)
+        print(root.val)
+
+
+
+A=Solution()
+preorder = ['D','B','A','C','E','G','F']
+inorder = ['A','B','C','D','E','F','G']
+A.buildTree(preorder,inorder)
+print(A.buildTree(preorder,inorder))
+#print(A.levelOrderBottom(A.buildTree(preorder,inorder)))
+print(A.lastorder(A.buildTree(preorder,inorder)))
+
+
+
