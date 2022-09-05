@@ -89,3 +89,42 @@ System.out.println(dist[end]);
 }
 }
 }
+while 1:
+    try:
+        n, m = map(int, input().split())
+        map_ = {}
+        for i in range(n):
+            ui, vi, wi = list(map(int, input().split()))
+            if ui not in map_:
+                map_[ui] = {}
+            map_[ui].update({vi: wi})
+
+        s, e = map(int, input().split())
+        # print(map_)
+        # {1: {2: 11, 3: 50}, 2: {3: 13}}
+
+        def dfs(start, end, high):
+            """
+            :param start: 起始位置
+            :param end: 结束位置
+            :param high: 当前深度，超过m跳出
+            :return:
+            """
+            # float("inf") 无穷大
+            min_ = float("inf")
+            # 假设所有起始点都在map中
+            if start not in map_ or high > m:
+                return min_
+
+            next_ = map_[start]
+            if end in next_:
+                min_ = min(min_, next_[end])
+
+            for k, v in next_.items():
+                min_ = min(min_, v + dfs(k, e, high+1))
+
+            return min_
+
+        print(dfs(s, e, 1))
+    except Exception as e:
+        break
