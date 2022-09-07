@@ -87,3 +87,24 @@ public class printSort {
         }
     }
 }
+# 打印任务排序  
+def fun26():  
+    n = list(map(int, input().split(",")))  
+    index_n = []  
+    res = []  
+    for i in range(len(n)):  
+        index_n.append([i, n[i]])   # [下标索引, 数字]  
+          
+    sort_n_by_index = sorted(index_n, key=lambda x: -x[1])  # 按照数字进行逆序排序  
+      
+    for j in range(len(sort_n_by_index)):  
+        sort_n_by_index[j].append(j)  # [下标索引，数字, 打印顺序]  
+          
+    sort_n_by_order = sorted(sort_n_by_index, key=lambda x: x[0])  # 按照下标索引再次排序  
+      
+    for k in range(len(sort_n_by_order)):  
+        res.append(str(sort_n_by_order[k][2]))  
+    return ",".join(res)  
+  
+  
+print(fun26())
